@@ -55,13 +55,3 @@ let sns__icon = document.querySelector(".footer__icon");
 sns__icon.addEventListener("click", function (e) {
   e.preventDefault();
 });
-
-//關於我們
-const aboutScore = document.querySelector(".about__content__text");
-aboutScore.addEventListener("mouseenter", () => {
-  about__content__text.textContent =
-    "最棒的電影，推薦給每一位喜歡英雄電影的朋友！";
-});
-div.addEventListener("mouseleave", () => {
-  about__content__text.textContent = "在這裡分享您的電影心得評論:)";
-});
