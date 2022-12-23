@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>
+        <a href="#">
+          <img
+            src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/logo/header__Logo.png"
+            alt="logo"
+          />
+        </a>
+      </h1>
+      <nav class="header__ul">
+        <ul class="header__item" style="list-style: none; padding-left: 0">
+          <li>
+            <svg
+              class="icon__search"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M12.5 11H11.71L11.43 10.73C12.63 9.33 13.25 7.42 12.91 5.39C12.44 2.61 10.12 0.39 7.32001 0.05C3.09001 -0.47 -0.469985 3.09 0.0500152 7.32C0.390015 10.12 2.61002 12.44 5.39002 12.91C7.42002 13.25 9.33002 12.63 10.73 11.43L11 11.71V12.5L15.25 16.75C15.66 17.16 16.33 17.16 16.74 16.75C17.15 16.34 17.15 15.67 16.74 15.26L12.5 11ZM6.50002 11C4.01002 11 2.00002 8.99 2.00002 6.5C2.00002 4.01 4.01002 2 6.50002 2C8.99002 2 11 4.01 11 6.5C11 8.99 8.99002 11 6.50002 11Z"
+                fill="white"
+              />
+            </svg>
+          </li>
+          <li>電影</li>
+          <li>關注列表</li>
+          <li>會員中心</li>
+          <li>登入 / 註冊</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="border"></div>
+    <main>
+      <section class="banner">
+        <!-- 電影預告片播放 -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="banner__movie__play">
+                <div class="movie__gradient">
+                  <div class="banner__gradient__l"></div>
+                  <div class="banner__gradient__r"></div>
+                </div>
+                <section class="banner__block">
+                  <img src="https://i.imgur.com/gfGi6ZR.png" alt="影片橫幅" />
+                  <img
+                    class="banner__img"
+                    src="https://i.imgur.com/yP54ZHi.png"
+                    alt="圖片"
+                  />
+                  <div class="video__block">
+                    <svg
+                      class="video__play__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="90"
+                      height="90"
+                      viewBox="0 0 54 54"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6667 19.3333V34.6C20.6667 35.4 20.9889 35.9889 21.6333 36.3667C22.2778 36.7444 22.9111 36.7111 23.5333 36.2667L35.6 28.5333C36.1778 28.1778 36.4667 27.6667 36.4667 27C36.4667 26.3333 36.1778 25.8 35.6 25.4L23.5333 17.6667C22.9111 17.2667 22.2778 17.2555 21.6333 17.6333C20.9889 18.0111 20.6667 18.5778 20.6667 19.3333V19.3333ZM27 53.3333C23.4 53.3333 20 52.6333 16.8 51.2333C13.6 49.8333 10.8111 47.9444 8.43334 45.5667C6.05556 43.1889 4.16667 40.4 2.76667 37.2C1.36667 34 0.666672 30.6 0.666672 27C0.666672 23.4 1.36667 20 2.76667 16.8C4.16667 13.6 6.05556 10.8 8.43334 8.39999C10.8111 5.99999 13.6 4.1111 16.8 2.73332C20 1.35555 23.4 0.666656 27 0.666656C30.6 0.666656 34 1.36666 37.2 2.76666C40.4 4.16666 43.2 6.05555 45.6 8.43332C48 10.8111 49.8889 13.6 51.2667 16.8C52.6445 20 53.3333 23.4 53.3333 27C53.3333 30.6 52.6333 34 51.2333 37.2C49.8333 40.4 47.9444 43.1889 45.5667 45.5667C43.1889 47.9444 40.4 49.8333 37.2 51.2333C34 52.6333 30.6 53.3333 27 53.3333V53.3333ZM27 49.4667C33.1778 49.4667 38.4778 47.2667 42.9 42.8667C47.3222 38.4667 49.5333 33.1778 49.5333 27C49.5333 20.8222 47.3222 15.5222 42.9 11.1C38.4778 6.67777 33.1778 4.46666 27 4.46666C20.8222 4.46666 15.5333 6.67777 11.1333 11.1C6.73334 15.5222 4.53334 20.8222 4.53334 27C4.53334 33.1778 6.73334 38.4667 11.1333 42.8667C15.5333 47.2667 20.8222 49.4667 27 49.4667Z"
+                        fill="#B02A37"
+                      />
+                    </svg>
+                    <div class="video__info">
+                      <span class="video__title">復仇者聯盟：終局之戰</span>
+                      <span class="video__time"> 02:20</span>
+                      <div class="video__watch">觀看預告片</div>
+                    </div>
+                  </div>
+                  <div class="banner__gradient__b"></div>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner__movie__play">
+                <div class="movie__gradient">
+                  <div class="banner__gradient__l"></div>
+                  <div class="banner__gradient__r"></div>
+                </div>
+                <section class="banner__block">
+                  <img
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Thor%20Love%20and%20-%20Thunderposter.png"
+                    alt="影片橫幅"
+                  />
+                  <img
+                    class="banner__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Thor%20Love%20and%20-%20Thunderposter%20-%20s.png"
+                    alt="圖片"
+                  />
+                  <div class="video__block">
+                    <svg
+                      class="video__play__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="90"
+                      height="90"
+                      viewBox="0 0 54 54"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6667 19.3333V34.6C20.6667 35.4 20.9889 35.9889 21.6333 36.3667C22.2778 36.7444 22.9111 36.7111 23.5333 36.2667L35.6 28.5333C36.1778 28.1778 36.4667 27.6667 36.4667 27C36.4667 26.3333 36.1778 25.8 35.6 25.4L23.5333 17.6667C22.9111 17.2667 22.2778 17.2555 21.6333 17.6333C20.9889 18.0111 20.6667 18.5778 20.6667 19.3333V19.3333ZM27 53.3333C23.4 53.3333 20 52.6333 16.8 51.2333C13.6 49.8333 10.8111 47.9444 8.43334 45.5667C6.05556 43.1889 4.16667 40.4 2.76667 37.2C1.36667 34 0.666672 30.6 0.666672 27C0.666672 23.4 1.36667 20 2.76667 16.8C4.16667 13.6 6.05556 10.8 8.43334 8.39999C10.8111 5.99999 13.6 4.1111 16.8 2.73332C20 1.35555 23.4 0.666656 27 0.666656C30.6 0.666656 34 1.36666 37.2 2.76666C40.4 4.16666 43.2 6.05555 45.6 8.43332C48 10.8111 49.8889 13.6 51.2667 16.8C52.6445 20 53.3333 23.4 53.3333 27C53.3333 30.6 52.6333 34 51.2333 37.2C49.8333 40.4 47.9444 43.1889 45.5667 45.5667C43.1889 47.9444 40.4 49.8333 37.2 51.2333C34 52.6333 30.6 53.3333 27 53.3333V53.3333ZM27 49.4667C33.1778 49.4667 38.4778 47.2667 42.9 42.8667C47.3222 38.4667 49.5333 33.1778 49.5333 27C49.5333 20.8222 47.3222 15.5222 42.9 11.1C38.4778 6.67777 33.1778 4.46666 27 4.46666C20.8222 4.46666 15.5333 6.67777 11.1333 11.1C6.73334 15.5222 4.53334 20.8222 4.53334 27C4.53334 33.1778 6.73334 38.4667 11.1333 42.8667C15.5333 47.2667 20.8222 49.4667 27 49.4667Z"
+                        fill="#B02A37"
+                      />
+                    </svg>
+                    <div class="video__info">
+                      <span class="video__title">雷神索爾：愛與雷霆</span>
+                      <span class="video__time"> 02:11</span>
+                      <div class="video__watch">觀看預告片</div>
+                    </div>
+                  </div>
+                  <div class="banner__gradient__b"></div>
+                </section>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="banner__movie__play">
+                <div class="movie__gradient">
+                  <div class="banner__gradient__l"></div>
+                  <div class="banner__gradient__r"></div>
+                </div>
+                <section class="banner__block">
+                  <img
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Captain_Marvel.png"
+                    alt="影片橫幅"
+                  />
+                  <img
+                    class="banner__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Captain_Marvel_s.png"
+                    alt="圖片"
+                  />
+                  <div class="video__block">
+                    <svg
+                      class="video__play__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="90"
+                      height="90"
+                      viewBox="0 0 54 54"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.6667 19.3333V34.6C20.6667 35.4 20.9889 35.9889 21.6333 36.3667C22.2778 36.7444 22.9111 36.7111 23.5333 36.2667L35.6 28.5333C36.1778 28.1778 36.4667 27.6667 36.4667 27C36.4667 26.3333 36.1778 25.8 35.6 25.4L23.5333 17.6667C22.9111 17.2667 22.2778 17.2555 21.6333 17.6333C20.9889 18.0111 20.6667 18.5778 20.6667 19.3333V19.3333ZM27 53.3333C23.4 53.3333 20 52.6333 16.8 51.2333C13.6 49.8333 10.8111 47.9444 8.43334 45.5667C6.05556 43.1889 4.16667 40.4 2.76667 37.2C1.36667 34 0.666672 30.6 0.666672 27C0.666672 23.4 1.36667 20 2.76667 16.8C4.16667 13.6 6.05556 10.8 8.43334 8.39999C10.8111 5.99999 13.6 4.1111 16.8 2.73332C20 1.35555 23.4 0.666656 27 0.666656C30.6 0.666656 34 1.36666 37.2 2.76666C40.4 4.16666 43.2 6.05555 45.6 8.43332C48 10.8111 49.8889 13.6 51.2667 16.8C52.6445 20 53.3333 23.4 53.3333 27C53.3333 30.6 52.6333 34 51.2333 37.2C49.8333 40.4 47.9444 43.1889 45.5667 45.5667C43.1889 47.9444 40.4 49.8333 37.2 51.2333C34 52.6333 30.6 53.3333 27 53.3333V53.3333ZM27 49.4667C33.1778 49.4667 38.4778 47.2667 42.9 42.8667C47.3222 38.4667 49.5333 33.1778 49.5333 27C49.5333 20.8222 47.3222 15.5222 42.9 11.1C38.4778 6.67777 33.1778 4.46666 27 4.46666C20.8222 4.46666 15.5333 6.67777 11.1333 11.1C6.73334 15.5222 4.53334 20.8222 4.53334 27C4.53334 33.1778 6.73334 38.4667 11.1333 42.8667C15.5333 47.2667 20.8222 49.4667 27 49.4667Z"
+                        fill="#B02A37"
+                      />
+                    </svg>
+                    <div class="video__info">
+                      <span class="video__title">驚奇隊長</span>
+                      <span class="video__time"> 02:33</span>
+                      <div class="video__watch">觀看預告片</div>
+                    </div>
+                  </div>
+                  <div class="banner__gradient__b"></div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <section class="next__movie">
+          <div class="next__title__border">
+            <div class="next__title">下一個影片</div>
+          </div>
+          <div class="next__block">
+            <a href="#">
+              <img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/pic/Rectangle%20Spider-Man.png"
+                alt="圖片"
+              />
+            </a>
+            <div class="next__block__info">
+              <div class="next__block__playTime">
+                <svg
+                  class="next__play"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0417 12.2083V21.75C13.0417 22.25 13.2431 22.6181 13.6459 22.8542C14.0486 23.0903 14.4445 23.0694 14.8334 22.7917L22.375 17.9583C22.7361 17.7361 22.9167 17.4167 22.9167 17C22.9167 16.5833 22.7361 16.25 22.375 16L14.8334 11.1667C14.4445 10.9167 14.0486 10.9097 13.6459 11.1458C13.2431 11.3819 13.0417 11.7361 13.0417 12.2083ZM17 33.4583C14.75 33.4583 12.625 33.0208 10.625 32.1458C8.62502 31.2708 6.88196 30.0903 5.39585 28.6042C3.90974 27.1181 2.72919 25.375 1.85419 23.375C0.979187 21.375 0.541687 19.25 0.541687 17C0.541687 14.75 0.979187 12.625 1.85419 10.625C2.72919 8.625 3.90974 6.875 5.39585 5.375C6.88196 3.875 8.62502 2.69444 10.625 1.83333C12.625 0.972223 14.75 0.541667 17 0.541667C19.25 0.541667 21.375 0.979167 23.375 1.85417C25.375 2.72917 27.125 3.90972 28.625 5.39583C30.125 6.88194 31.3056 8.625 32.1667 10.625C33.0278 12.625 33.4584 14.75 33.4584 17C33.4584 19.25 33.0209 21.375 32.1459 23.375C31.2709 25.375 30.0903 27.1181 28.6042 28.6042C27.1181 30.0903 25.375 31.2708 23.375 32.1458C21.375 33.0208 19.25 33.4583 17 33.4583ZM17 31.0417C20.8611 31.0417 24.1736 29.6667 26.9375 26.9167C29.7014 24.1667 31.0834 20.8611 31.0834 17C31.0834 13.1389 29.7014 9.82639 26.9375 7.0625C24.1736 4.29861 20.8611 2.91667 17 2.91667C13.1389 2.91667 9.83335 4.29861 7.08335 7.0625C4.33335 9.82639 2.95835 13.1389 2.95835 17C2.95835 20.8611 4.33335 24.1667 7.08335 26.9167C9.83335 29.6667 13.1389 31.0417 17 31.0417Z"
+                    fill="#B02A37"
+                  />
+                </svg>
+                <span class="next__time"> 02:44</span>
+              </div>
+              <div class="next__block__title">
+                <div class="next__name">蜘蛛人</div>
+                <div class="next__text">
+                  蜘蛛人身份被揭穿後，彼得帕克的下一步該怎麼做？
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next__block">
+            <a href="#">
+              <img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/pic/Rectangle%20Spider-Man%202.png"
+                alt="蜘蛛人1"
+              />
+            </a>
+            <div class="next__block__info">
+              <div class="next__block__playTime">
+                <svg
+                  class="next__play"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0417 12.2083V21.75C13.0417 22.25 13.2431 22.6181 13.6459 22.8542C14.0486 23.0903 14.4445 23.0694 14.8334 22.7917L22.375 17.9583C22.7361 17.7361 22.9167 17.4167 22.9167 17C22.9167 16.5833 22.7361 16.25 22.375 16L14.8334 11.1667C14.4445 10.9167 14.0486 10.9097 13.6459 11.1458C13.2431 11.3819 13.0417 11.7361 13.0417 12.2083ZM17 33.4583C14.75 33.4583 12.625 33.0208 10.625 32.1458C8.62502 31.2708 6.88196 30.0903 5.39585 28.6042C3.90974 27.1181 2.72919 25.375 1.85419 23.375C0.979187 21.375 0.541687 19.25 0.541687 17C0.541687 14.75 0.979187 12.625 1.85419 10.625C2.72919 8.625 3.90974 6.875 5.39585 5.375C6.88196 3.875 8.62502 2.69444 10.625 1.83333C12.625 0.972223 14.75 0.541667 17 0.541667C19.25 0.541667 21.375 0.979167 23.375 1.85417C25.375 2.72917 27.125 3.90972 28.625 5.39583C30.125 6.88194 31.3056 8.625 32.1667 10.625C33.0278 12.625 33.4584 14.75 33.4584 17C33.4584 19.25 33.0209 21.375 32.1459 23.375C31.2709 25.375 30.0903 27.1181 28.6042 28.6042C27.1181 30.0903 25.375 31.2708 23.375 32.1458C21.375 33.0208 19.25 33.4583 17 33.4583ZM17 31.0417C20.8611 31.0417 24.1736 29.6667 26.9375 26.9167C29.7014 24.1667 31.0834 20.8611 31.0834 17C31.0834 13.1389 29.7014 9.82639 26.9375 7.0625C24.1736 4.29861 20.8611 2.91667 17 2.91667C13.1389 2.91667 9.83335 4.29861 7.08335 7.0625C4.33335 9.82639 2.95835 13.1389 2.95835 17C2.95835 20.8611 4.33335 24.1667 7.08335 26.9167C9.83335 29.6667 13.1389 31.0417 17 31.0417Z"
+                    fill="#B02A37"
+                  />
+                </svg>
+                <span class="next__time"> 02:22</span>
+              </div>
+              <div class="next__block__title">
+                <div class="next__name">蜘蛛人：返校日</div>
+                <div class="next__text">全新反派禿鷹的強勢現身</div>
+              </div>
+            </div>
+          </div>
+          <div class="next__block">
+            <a href="#">
+              <img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/pic/Rectangle%20Deadpool.png"
+                alt="圖片"
+              />
+            </a>
+            <div class="next__block__info">
+              <div class="next__block__playTime">
+                <svg
+                  class="next__play"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="34"
+                  height="34"
+                  viewBox="0 0 34 34"
+                  fill="none"
+                >
+                  <path
+                    d="M13.0417 12.2083V21.75C13.0417 22.25 13.2431 22.6181 13.6459 22.8542C14.0486 23.0903 14.4445 23.0694 14.8334 22.7917L22.375 17.9583C22.7361 17.7361 22.9167 17.4167 22.9167 17C22.9167 16.5833 22.7361 16.25 22.375 16L14.8334 11.1667C14.4445 10.9167 14.0486 10.9097 13.6459 11.1458C13.2431 11.3819 13.0417 11.7361 13.0417 12.2083ZM17 33.4583C14.75 33.4583 12.625 33.0208 10.625 32.1458C8.62502 31.2708 6.88196 30.0903 5.39585 28.6042C3.90974 27.1181 2.72919 25.375 1.85419 23.375C0.979187 21.375 0.541687 19.25 0.541687 17C0.541687 14.75 0.979187 12.625 1.85419 10.625C2.72919 8.625 3.90974 6.875 5.39585 5.375C6.88196 3.875 8.62502 2.69444 10.625 1.83333C12.625 0.972223 14.75 0.541667 17 0.541667C19.25 0.541667 21.375 0.979167 23.375 1.85417C25.375 2.72917 27.125 3.90972 28.625 5.39583C30.125 6.88194 31.3056 8.625 32.1667 10.625C33.0278 12.625 33.4584 14.75 33.4584 17C33.4584 19.25 33.0209 21.375 32.1459 23.375C31.2709 25.375 30.0903 27.1181 28.6042 28.6042C27.1181 30.0903 25.375 31.2708 23.375 32.1458C21.375 33.0208 19.25 33.4583 17 33.4583ZM17 31.0417C20.8611 31.0417 24.1736 29.6667 26.9375 26.9167C29.7014 24.1667 31.0834 20.8611 31.0834 17C31.0834 13.1389 29.7014 9.82639 26.9375 7.0625C24.1736 4.29861 20.8611 2.91667 17 2.91667C13.1389 2.91667 9.83335 4.29861 7.08335 7.0625C4.33335 9.82639 2.95835 13.1389 2.95835 17C2.95835 20.8611 4.33335 24.1667 7.08335 26.9167C9.83335 29.6667 13.1389 31.0417 17 31.0417Z"
+                    fill="#B02A37"
+                  />
+                </svg>
+                <span class="next__time"> 02:44</span>
+              </div>
+              <div class="next__block__title">
+                <div class="next__name">惡棍英雄：死侍</div>
+                <div class="next__text">
+                  惡棍英雄：死侍，是一部於2016年上映的美國超級英雄電影，改編自漫威漫畫旗下的反英雄角色死侍
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="next__watch__trailer">
+            <div class="next__trailer">瀏覽預告片</div>
+            <svg
+              class="next__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="13"
+              height="22"
+              viewBox="0 0 13 22"
+              fill="none"
+            >
+              <path
+                d="M0.718819 21.5234C1.29049 22.0951 2.21215 22.0951 2.78382 21.5234L12.4788 11.8284C12.9338 11.3734 12.9338 10.6384 12.4788 10.1834L2.78382 0.488428C2.21215 -0.0832386 1.29049 -0.0832386 0.718819 0.488428C0.147152 1.06009 0.147152 1.98176 0.718819 2.55343L9.16548 11.0118L0.707153 19.4701C0.147154 20.0301 0.147152 20.9634 0.718819 21.5234Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </section>
+      </section>
+      <!-- 關於我們 -->
+      <section class="content__about">
+        <div class="title__group__border">
+          <div class="title__group">關於我們</div>
+        </div>
+        <div class="cards">
+          <div class="content__about">
+            <img
+              class="cards__logo"
+              src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/logo/about__Logo.png"
+              alt="logo"
+            />
+            <div class="about__text">
+              <p>
+                是一個可以查看電影評分的網站，可以在這裡查看大家的評分與心得，也可以將你的心得在這裡分享和大家！
+              </p>
+            </div>
+            <div class="about_cards__btn">
+              <p class="btn__login">登入帳號</p>
+            </div>
+          </div>
+          <!-- 關於我們右邊區塊 -->
+          <div class="content__single__movie">
+            <div class="swiper movieList">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide schematic">
+                  <div class="cards__list">
+                    <div class="cards__select">
+                      <img
+                        class="cards__img__left"
+                        src="https://i.imgur.com/O9JnXul.png"
+                        alt="海報"
+                      />
+                      <img
+                        class="carsd__icon__add"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                        alt="add"
+                      />
+                      <div class="carsd__score__list">
+                        <img
+                          src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                          alt="star"
+                        />
+                        <div class="carsd__score">100%</div>
+                      </div>
+                      <div class="carsd__title">電影標題</div>
+                    </div>
+                    <div class="cards__select cards__click">
+                      <img
+                        class="cards__img"
+                        src="https://i.imgur.com/xM79Zj2.png"
+                        alt="海報"
+                      />
+                      <img
+                        class="carsd__icon__add"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                        alt="add"
+                      />
+                      <img
+                        class="cards__icon__finger"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/cursor.png"
+                        alt="click"
+                      />
+                      <img
+                        class="cards__icon__click"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/icon/cursor__click.png"
+                        alt="click__trigger"
+                      />
+                      <div class="carsd__score__list" display:none>
+                        <img
+                          src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                          alt="star"
+                        />
+                        <div class="carsd__score">100%</div>
+                      </div>
+                      <div class="carsd__title">電影標題</div>
+                    </div>
+                    <div class="cards__select">
+                      <img
+                        class="cards__img__right"
+                        src="https://i.imgur.com/Jy2uahY.png"
+                        alt="海報"
+                      />
+                      <img
+                        class="carsd__icon__add"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                        alt="add"
+                      />
+                      <div class="carsd__score__list">
+                        <img
+                          src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                          alt="star"
+                        />
+                        <div class="carsd__score">100%</div>
+                      </div>
+                      <div class="carsd__title">電影標題</div>
+                    </div>
+                  </div>
+                  <div class="description__movie">
+                    <div class="description__text">
+                      點選
+                      <img
+                        class="description__icon"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add%20s.png"
+                        alt="add"
+                      />將電影加入關注列表
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide feedback">
+                  <div class="about__feedback__block">
+                    <div class="about__feedback__title">評論分數</div>
+                    <div class="about__score__icon">
+                      <img
+                        class="about__star__cion"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star.png"
+                        alt="star__cion"
+                      />
+                      <img
+                        class="about__star__cion"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star.png"
+                        alt="star__cion"
+                      />
+                      <img
+                        class="about__star__cion"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star.png"
+                        alt="star__cion"
+                      />
+                      <img
+                        class="about__star__cion"
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star.png"
+                        alt="star__cion"
+                      />
+                      <img
+                        class="about__star__cion"
+                        src="https://i.imgur.com/AwNfTVn.png"
+                        alt="star__cion"
+                      />
+                    </div>
+                    <div class="about__feedback__input">
+                      <div class="about__content__text">
+                        在這裡分享您的電影心得評論:)
+                      </div>
+                    </div>
+                    <div class="feedback__description"></div>
+                    <div class="feedback__under">
+                      <img
+                        src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star.png"
+                        alt="star"
+                      />
+                      <div class="feedback__under__text">
+                        幫看過的電影打分數和分享心得
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="movieList-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 新電影和即將上映的電影 -->
+      <section class="new__upcoming__Movies">
+        <div class="title__group__border">
+          <div class="title__group">新電影和即將上映的電影</div>
+        </div>
+        <div class="title__under__space"></div>
+        <div class="movie__integrate__list">
+          <div class="swiper movieIntegrate">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/black%20panther%20-%20wakanda%20forever.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">黑豹2：瓦干達萬歲</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/the%20menu.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">五星饗魘</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/avatar.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">阿凡達：水之道</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Sissy.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">致命網紅Sissy</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Puss%20in%20Boots-%20The%20Last%20Wish.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">鞋貓劍客2</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Lyle%2C%20Lyle%2C%20Crocodile.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">鱷魚歌王</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/M3GAN.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">窒友梅根</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/LADY%20CHATTERLEY'S%20LOVER.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">查泰萊夫人的情人</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://i.imgur.com/sxaq49J.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">巴比倫</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://i.imgur.com/YggDg1W.png"
+                    alt="海報"
+                  />
+                  <img
+                    class="new_cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">龍與地下城：盜賊榮耀</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <!-- 熱門電影 -->
+      <section class="popularMovies">
+        <div class="title__above__space"></div>
+        <div class="title__group__border">
+          <div class="title__group">熱門電影</div>
+        </div>
+        <div class="title__subtitle">本週最熱門的電影</div>
+        <div class="title__under__space"></div>
+        <div class="movie__integrate__list">
+          <div class="swiper movieIntegrate">
+            <!-- 電影列表 -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://github.com/KiraKira32/LoveMD/blob/main/img/pic/Avengers%20infinity%20war%20_s.png?raw=true"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">97%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">復仇者聯盟：無限之戰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Avengers_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">97%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">復仇者聯盟：終局之戰</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/black%20widow_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">56%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">黑寡婦</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Doctor_Strange_2016_Poster.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">90%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">奇異博士</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/ETERNALS.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">87%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">永恆族</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/c1aa5fb8654e18c466329251f96e8cb6b71eb914/img/pic/Doctor%20Strange%20in%20the%20Multiverse%20of%20Madness.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">76%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">奇異博士2：失控多重宇宙</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Captain_Marvel_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">80%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">驚奇隊長</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Thor%20Love%20and%20-%20Thunderposter%20-%20s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">78%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">雷神索爾：愛與雷霆</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/95d602b2f9883084bd8488d627a59cbc92be4da0/img/pic/Captain%20America%20-%20The%20First%20Avenger%20-%20s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">95%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">美國隊長</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/Thor_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">89%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">雷神索爾</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/black%20panther_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">83%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">黑豹</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/Guardians%20of%20the%20Galaxy%20_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">80%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">星際異攻隊</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/Ant-Man%20and%20the%20Wasp.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">72%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">蟻人與黃蜂女：量子狂熱</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/Guardians%20of%20the%20Galaxy%20Vol.%202_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">70%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">星際異攻隊2</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="movie__cards">
+                  <img
+                    class="movie__cards__img"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/02db43aac233bea1a224e379f60b168c3444b8df/img/pic/Guardians%20of%20the%20Galaxy%20_s.png"
+                    alt="海報"
+                  />
+                  <div class="carsd__score__list">
+                    <img
+                      src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Star_s.png"
+                      alt="star"
+                    />
+                    <div class="carsd__score">76%</div>
+                  </div>
+                  <img
+                    class="movie__cards__icon"
+                    src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/add.png"
+                    alt="add__icon"
+                  />
+                  <div class="movie__cards__title">星際異攻隊</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </section>
+      <section class="watchList">
+        <div class="title__above__space"></div>
+        <div class="title__group__border">
+          <div class="title__group">關注列表</div>
+        </div>
+        <div class="title__subtitle">來自您的關注列表</div>
+        <div class="watchlist__content">
+          <img
+            class="watchlist__icon"
+            src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/check.png"
+            alt="check"
+          />
+          <div class="watchList__caption">
+            登入以訪問您的關注列表<br />保存節目和電影以及您想觀看的內容。
+          </div>
+          <div class="watchList__btn">
+            <button class="watchList__button">
+              <div class="watchList__login">登入帳號</div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="footer__content">
+        <div class="footer__icon">
+          <div class="footer__icon__item">
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/Instagram__icon.png"
+                alt="Instagram__icon"
+            /></a>
+          </div>
+          <div class="footer__icon__item">
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/facebook__icon.png"
+                alt="facebook__icon"
+            /></a>
+          </div>
+          <div class="footer__icon__item">
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/twitter__icon.png"
+                alt="twitter__icon"
+            /></a>
+          </div>
+          <div class="footer__icon__item">
+            <a href="#"
+              ><img
+                src="https://raw.githubusercontent.com/KiraKira32/LoveMD/0b3d45973654cbf069c7b84df102232f7ad2a617/img/icon/youtube__icon.png"
+                alt="youtube__icon"
+            /></a>
+          </div>
+        </div>
+        <div class="footer__text">
+          Copyright © 2022 data . All rights reserved.<br />聲明：本網站僅供學習用途非營利使用。
+        </div>
+      </section>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/all.js"></script>
+</html>

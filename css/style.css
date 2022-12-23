@@ -1,0 +1,581 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  color: #ffffff;
+  background-color: #212529;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  max-width: 1352px;
+  margin: 0 auto;
+}
+header .logo {
+  width: 132px;
+}
+header .header__item {
+  width: 100%;
+  display: flex;
+  margin-right: 12px;
+}
+header .header__item li {
+  padding: 8px 8px 8px 8px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.border {
+  border-bottom: 1px solid #b02a37;
+}
+
+main {
+  margin: 0 auto;
+  width: 1352px;
+}
+main .banner {
+  position: relative;
+  padding-top: 25px;
+  margin-bottom: 100px;
+  display: flex;
+}
+main .banner__gradient__l {
+  background: linear-gradient(90deg, #212529 0%, rgba(33, 37, 41, 0) 100%);
+  position: absolute;
+  width: 120px;
+  height: 432px;
+}
+main .banner__gradient__r {
+  background: linear-gradient(90deg, rgba(33, 37, 41, 0) 0%, #212529 100%);
+  position: absolute;
+  left: 742px;
+  width: 120px;
+  height: 432px;
+}
+main .banner__gradient__b {
+  background: linear-gradient(180deg, rgba(33, 37, 41, 0) 0%, #212529 100%);
+  position: absolute;
+  top: 290px;
+  width: 856px;
+  height: 150px;
+}
+main .banner__img {
+  position: absolute;
+  top: 280px;
+  left: 30px;
+  border-radius: 5px 5px 5px 5px;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
+
+section .title__group__border {
+  border-left: 4px solid #b02a37;
+}
+section .title__group {
+  padding-top: 3px;
+  margin-left: 15px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.mySwiper {
+  width: 856px;
+  /*去掉默認樣式*/
+  /*在字定義樣式*/
+}
+.mySwiper .swiper-button-prev:after {
+  display: none;
+}
+.mySwiper .swiper-button-next:after {
+  display: none;
+}
+.mySwiper .swiper-button-prev {
+  background: url("https://raw.githubusercontent.com/KiraKira32/LoveMD/f36d6f20290c985fedf4f20d9147a4b0a3049af3/img/icon/Chevron%20Left.png") no-repeat;
+  top: 240px;
+  left: 50px;
+}
+.mySwiper .swiper-button-next {
+  background: url("https://raw.githubusercontent.com/KiraKira32/LoveMD/f36d6f20290c985fedf4f20d9147a4b0a3049af3/img/icon/Chevron%20Right.png") no-repeat;
+  top: 240px;
+  right: 50px;
+}
+
+.swiper-pagination-bullet-active,
+.swiper-pagination-bullet {
+  width: 48px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  opacity: 0.18;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b02a37;
+  opacity: 1;
+}
+
+.video__block {
+  display: flex;
+  margin-left: 236px;
+  padding-top: 25px;
+}
+.video__block .video__info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.video__block .video__title {
+  width: 350px;
+  font-size: 34px;
+  line-height: 0.8;
+}
+.video__block .video__watch {
+  font-weight: 300;
+  font-size: 20px;
+}
+.video__block .video__time {
+  margin-right: 8px;
+  font-size: 20px;
+  font-weight: 100;
+}
+.video__block .video__play__icon {
+  margin: 0px 25px 0px 25px;
+}
+
+.next__movie {
+  background: linear-gradient(22.85deg, rgba(52, 58, 64, 0) 70.09%, #343a40 100%);
+  color: #ced4da;
+  height: 552px;
+  width: 432px;
+  margin-left: 16px;
+}
+.next__movie .next__block {
+  padding-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.next__movie .next__title__border {
+  border-left: 3px solid #b02a37;
+}
+.next__movie .next__title {
+  padding: 4px 0px 4px 0px;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.next__movie .next__play {
+  padding: 4px 0px 8px 0px;
+  margin-right: 15px;
+}
+.next__movie .next__time {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.next__movie .next__name {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 25px;
+  padding-bottom: 6px;
+}
+.next__movie .next__text {
+  font-weight: 100;
+  font-size: 14px;
+}
+.next__movie .next__block__info {
+  display: block;
+  padding: 0px 19px 0px 19px;
+  width: 256px;
+}
+.next__movie .next__block__playTime {
+  display: flex;
+  align-items: center;
+}
+.next__movie .next__watch__trailer {
+  display: flex;
+  padding: 28px 0px 0px 8px;
+}
+.next__movie .next__trailer {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.content__about {
+  font-weight: 100;
+}
+.content__about .cards {
+  padding: 76px 0px 200px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.content__about .about__text {
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.content__about .content__about {
+  line-height: 1.5;
+  align-items: center;
+  width: 45%;
+  border-radius: 10px;
+  border: 1px solid #b02a37;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.content__about .test {
+  text-align: justify;
+}
+.content__about .about_cards__btn {
+  background-color: #b02a37;
+  border-radius: 25px;
+  padding: 9.5px 40px 9.5px 40px;
+}
+.content__about .btn__login {
+  text-align: center;
+}
+
+.content__single__movie {
+  width: 50%;
+}
+.content__single__movie .cards__list {
+  display: flex;
+  justify-content: space-between;
+}
+.content__single__movie .cards__select {
+  position: relative;
+}
+.content__single__movie .carsd__icon__add {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+.content__single__movie .cards__icon__finger,
+.content__single__movie .cards__icon__click {
+  position: absolute;
+  top: 47px;
+  left: 7px;
+}
+.content__single__movie .cards__img__left,
+.content__single__movie .cards__img__right {
+  filter: brightness(50%);
+}
+.content__single__movie .carsd__score__list {
+  padding-top: 15px;
+  display: flex;
+}
+.content__single__movie .carsd__score {
+  font-size: 20px;
+  padding-left: 17px;
+}
+.content__single__movie .carsd__title {
+  height: 74px;
+  padding-top: 15px;
+  font-size: 25px;
+}
+.content__single__movie .carsd__icon__add {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+}
+.content__single__movie .description__movie {
+  display: flex;
+  justify-content: center;
+}
+.content__single__movie .description__movie .description__text {
+  padding-top: 24px;
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+}
+.content__single__movie .description__movie .description__icon {
+  margin: 0px 14px 0px 14px;
+}
+
+.about__feedback__block {
+  align-items: center;
+}
+.about__feedback__block .about__feedback__title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.about__feedback__block .about__score__icon {
+  margin-bottom: 30px;
+}
+.about__feedback__block .about__star__cion {
+  margin-right: 10px;
+}
+.about__feedback__block .about__feedback__input {
+  width: 648px;
+  height: 278px;
+  border: 3px solid #b02a37;
+  border-radius: 25px;
+  background: #fff;
+}
+.about__feedback__block .about__feedback__input .about__content__text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #6c757d;
+  padding-top: 32px;
+  margin-left: 32px;
+}
+.about__feedback__block .feedback__under {
+  padding-top: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 24px;
+}
+.about__feedback__block .feedback__under__text {
+  padding-left: 16px;
+}
+
+.movieList {
+  height: 480px;
+}
+
+.movieList-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.title__under__space {
+  padding-top: 76px;
+}
+
+.title__above__space {
+  padding-top: 120px;
+}
+
+.title__subtitle {
+  padding-top: 12px;
+}
+
+.movie__integrate__list {
+  font-weight: 100;
+  display: flex;
+}
+.movie__integrate__list .movie__cards {
+  position: relative;
+}
+.movie__integrate__list .carsd__score__list {
+  display: flex;
+  align-items: flex-end;
+  font-size: 20px;
+}
+.movie__integrate__list .carsd__score {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.movie__integrate__list .movie__cards__icon,
+.movie__integrate__list .new_cards__icon {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+}
+.movie__integrate__list .movie__cards__title {
+  padding-top: 14px;
+  font-size: 20px;
+}
+
+.movieIntegrate {
+  /*去掉默認樣式*/
+  /*在字定義樣式*/
+}
+.movieIntegrate .swiper-button-prev:after {
+  display: none;
+}
+.movieIntegrate .swiper-button-next:after {
+  display: none;
+}
+.movieIntegrate .swiper-button-prev {
+  background: url("https://raw.githubusercontent.com/KiraKira32/LoveMD/f36d6f20290c985fedf4f20d9147a4b0a3049af3/img/icon/Chevron%20Left.png") no-repeat;
+  left: 10px;
+}
+.movieIntegrate .swiper-button-next {
+  background: url("https://raw.githubusercontent.com/KiraKira32/LoveMD/f36d6f20290c985fedf4f20d9147a4b0a3049af3/img/icon/Chevron%20Right.png") no-repeat;
+  right: 10px;
+}
+
+.watchlist__content {
+  width: 100%;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.watchlist__content .watchList__caption {
+  padding-top: 24px;
+  line-height: 1.5;
+}
+.watchlist__content .watchList__btn {
+  padding-top: 24px;
+}
+.watchlist__content .watchList__button {
+  background-color: #b02a37;
+  border-radius: 25px;
+  padding: 10px 42px 10px 42px;
+  border: none;
+  outline: none;
+}
+.watchlist__content .watchList__login {
+  font-size: 20px;
+  color: #fff;
+}
+
+.footer__content {
+  background-color: #b02a37;
+  width: 100%;
+  text-align: center;
+}
+.footer__content .footer__icon {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.footer__content .footer__icon__item {
+  margin-right: 20px;
+}
+.footer__content .footer__text {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding-bottom: 20px;
+}/*# sourceMappingURL=style.css.map */
